@@ -2,7 +2,7 @@
 
 A Flutter-based mobile app that helps users manage their daily schedule using a circular timetable.
 
---
+---
 
 ## Project Overview
 
@@ -12,7 +12,7 @@ A Flutter-based mobile app that helps users manage their daily schedule using a 
     - Circualr schedule UI
     - Task creation and editing
 
---
+---
 
 ## UI Mockups
 
