@@ -14,7 +14,7 @@ A Flutter-based mobile app that helps users manage their daily schedule using a 
 
 ---
 
-## UI Mockups
+## UI Sketch
 
 ### Main Screen
 <img src="images/ui/home_screen.png" width="300" />
