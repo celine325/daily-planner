@@ -1,4 +1,5 @@
 import 'package:daily_planner/constants/colors.dart';
+import 'package:daily_planner/theme/text_theme.dart';
 import 'package:flutter/material.dart';
 
 class AppTheme {
@@ -15,13 +16,9 @@ class AppTheme {
       onSecondary: AppColors.ivory,
     ),
     cardColor: Colors.white.withValues(alpha: 0.85),
-    textTheme: TextTheme(
-      bodyLarge: TextStyle(
-        color: AppColors.darkOlive,
-      ),
-      bodyMedium: TextStyle(
-        color: AppColors.darkOlive,
-      ),
+    textTheme: AppTextTheme.base.apply(
+      bodyColor: AppColors.darkOlive,
+      displayColor: AppColors.darkOlive,
     ),
     appBarTheme: AppBarTheme(
       backgroundColor: AppColors.ivory,
@@ -47,9 +44,9 @@ class AppTheme {
       onSecondary: AppColors.mutedIvory,
     ),
     cardColor: Colors.grey[850],
-    textTheme: TextTheme(
-      bodyLarge: TextStyle(color: AppColors.mutedIvory),
-      bodyMedium: TextStyle(color: AppColors.mutedIvory),
+    textTheme: AppTextTheme.base.apply(
+      bodyColor: AppColors.mutedIvory,
+      displayColor: AppColors.mutedIvory,
     ),
     appBarTheme: AppBarTheme(
       backgroundColor: AppColors.blackOlive,
