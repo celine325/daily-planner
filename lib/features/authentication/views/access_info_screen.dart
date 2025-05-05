@@ -3,8 +3,8 @@ import 'package:daily_planner/constants/gaps.dart';
 import 'package:daily_planner/constants/sizes.dart';
 import 'package:go_router/go_router.dart';
 
-class WelcomeScreen extends StatelessWidget {
-  const WelcomeScreen({super.key});
+class AccessInfoScreen extends StatelessWidget {
+  const AccessInfoScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,9 +26,7 @@ class WelcomeScreen extends StatelessWidget {
           ),
         ),
         child: Padding(
-          padding: const EdgeInsets.symmetric(
-            horizontal: Sizes.size32,
-          ),
+          padding: const EdgeInsets.symmetric(horizontal: Sizes.size32),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -49,15 +47,15 @@ class WelcomeScreen extends StatelessWidget {
               ),
               Gaps.v32,
               Text(
-                'Welcome to Daily Planner',
-                textAlign: TextAlign.center,
+                'Create an account to sync \nyour planner',
+                textAlign: TextAlign.left,
                 style: textTheme.headlineMedium?.copyWith(
                   color: Colors.white,
                 ),
               ),
               Gaps.v12,
               Text(
-                'Stay organized, manage your tasks, and plan every moment with ease.',
+                "Because planner is stored on your devices, you'll need to create an account to access your planner on another phone.",
                 textAlign: TextAlign.left,
                 style: textTheme.bodyMedium?.copyWith(
                   color: Colors.white70,
@@ -68,9 +66,9 @@ class WelcomeScreen extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {
-                    context.go("/access");
+                    context.go("/createPlanner");
                   },
-                  child: const Text('Create a planner'),
+                  child: const Text('Skip for now'),
                 ),
               ),
               Gaps.v16,
@@ -78,7 +76,7 @@ class WelcomeScreen extends StatelessWidget {
                 width: double.infinity,
                 child: OutlinedButton(
                   onPressed: () {
-                    context.go("/login");
+                    context.go("/signup");
                   },
                   style: OutlinedButton.styleFrom(
                     foregroundColor: Colors.white,
@@ -86,7 +84,7 @@ class WelcomeScreen extends StatelessWidget {
                       color: Colors.white,
                     ),
                   ),
-                  child: const Text('Use my existing planner'),
+                  child: const Text('Create account'),
                 ),
               ),
             ],
