@@ -4,6 +4,7 @@ import 'package:daily_planner/features/authentication/widgets/auth_button.dart';
 import 'package:daily_planner/features/authentication/widgets/auth_text_field.dart';
 import 'package:daily_planner/theme/text_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
@@ -64,7 +65,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   Gaps.h8,
                   GestureDetector(
                     onTap: () {
-                      // TODO: Navigate to LoginScreen
+                      context.go("/login");
                     },
                     child: Text(
                       'Log In',
